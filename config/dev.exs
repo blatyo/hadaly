@@ -6,7 +6,7 @@ use Mix.Config
 # The watchers configuration can be used to run external
 # watchers to your application. For example, we use it
 # with brunch.io to recompile .js and .css sources.
-config :cartero, Cartero.Endpoint,
+config :hadaly, Hadaly.Endpoint,
   http: [port: 4001],
   debug_errors: true,
   code_reloader: true,
@@ -14,7 +14,7 @@ config :cartero, Cartero.Endpoint,
   watchers: []
 
 # Watch static and templates for browser reloading.
-config :cartero, Cartero.Endpoint,
+config :hadaly, Hadaly.Endpoint,
   live_reload: [
     patterns: [
       ~r{priv/static/.*(js|css|png|jpeg|jpg|gif|svg)$},
@@ -33,10 +33,10 @@ config :logger, :console, format: "[$level] $message\n"
 config :phoenix, :stacktrace_depth, 20
 
 # Configure your database
-config :cartero, Cartero.Repo,
+config :hadaly, Hadaly.Repo,
   adapter: Ecto.Adapters.Postgres,
   username: "postgres",
   password: "postgres",
-  database: "cartero_dev",
+  database: "hadaly_dev",
   hostname: "localhost",
   pool_size: 10

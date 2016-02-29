@@ -1,12 +1,12 @@
-defmodule Cartero.Web do
+defmodule Hadaly.Web do
   @moduledoc """
   A module that keeps using definitions for controllers,
   views and so on.
 
   This can be used in your application as:
 
-      use Cartero.Web, :controller
-      use Cartero.Web, :view
+      use Hadaly.Web, :controller
+      use Hadaly.Web, :view
 
   The definitions below will be executed for every view,
   controller, etc, so keep them short and clean, focused
@@ -30,12 +30,12 @@ defmodule Cartero.Web do
     quote do
       use Phoenix.Controller
 
-      alias Cartero.Repo
+      alias Hadaly.Repo
       import Ecto
       import Ecto.Query, only: [from: 1, from: 2]
 
-      import Cartero.Router.Helpers
-      import Cartero.Gettext
+      import Hadaly.Router.Helpers
+      import Hadaly.Gettext
     end
   end
 
@@ -49,9 +49,9 @@ defmodule Cartero.Web do
       # Use all HTML functionality (forms, tags, etc)
       use Phoenix.HTML
 
-      import Cartero.Router.Helpers
-      import Cartero.ErrorHelpers
-      import Cartero.Gettext
+      import Hadaly.Router.Helpers
+      import Hadaly.ErrorHelpers
+      import Hadaly.Gettext
     end
   end
 
@@ -65,10 +65,10 @@ defmodule Cartero.Web do
     quote do
       use Phoenix.Channel
 
-      alias Cartero.Repo
+      alias Hadaly.Repo
       import Ecto
       import Ecto.Query, only: [from: 1, from: 2]
-      import Cartero.Gettext
+      import Hadaly.Gettext
     end
   end
 

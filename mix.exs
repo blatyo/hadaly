@@ -1,8 +1,8 @@
-defmodule Cartero.Mixfile do
+defmodule Hadaly.Mixfile do
   use Mix.Project
 
   def project do
-    [app: :cartero,
+    [app: :hadaly,
      version: "0.0.1",
      elixir: "~> 1.0",
      elixirc_paths: elixirc_paths(Mix.env),
@@ -17,9 +17,9 @@ defmodule Cartero.Mixfile do
   #
   # Type `mix help compile.app` for more information.
   def application do
-    [mod: {Cartero, []},
+    [mod: {Hadaly, []},
      applications: [:phoenix, :phoenix_html, :cowboy, :logger, :gettext,
-                    :phoenix_ecto, :postgrex]]
+                    :phoenix_ecto, :postgrex, :slack]]
   end
 
   # Specifies which paths to compile per environment.
@@ -36,7 +36,10 @@ defmodule Cartero.Mixfile do
      {:phoenix_html, "~> 2.4"},
      {:phoenix_live_reload, "~> 1.0", only: :dev},
      {:gettext, "~> 0.9"},
-     {:cowboy, "~> 1.0"}]
+     {:cowboy, "~> 1.0"},
+     {:slack, "~> 0.4.2"},
+     {:websocket_client, git: "https://github.com/jeremyong/websocket_client"},
+     {:exconstructor, "~> 1.0.0"}]
   end
 
   # Aliases are shortcut or tasks specific to the current project.

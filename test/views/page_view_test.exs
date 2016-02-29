@@ -1,3 +1,3 @@
-defmodule Cartero.PageViewTest do
-  use Cartero.ConnCase, async: true
+defmodule Hadaly.PageViewTest do
+  use Hadaly.ConnCase, async: true
 end

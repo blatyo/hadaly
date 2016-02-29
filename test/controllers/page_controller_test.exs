@@ -1,5 +1,5 @@
-defmodule Cartero.PageControllerTest do
-  use Cartero.ConnCase
+defmodule Hadaly.PageControllerTest do
+  use Hadaly.ConnCase
 
   test "GET /", %{conn: conn} do
     conn = get conn, "/"

@@ -1,4 +1,4 @@
-defmodule Cartero.ErrorHelpers do
+defmodule Hadaly.ErrorHelpers do
   @moduledoc """
   Conveniences for translating and building error messages.
   """
@@ -26,10 +26,10 @@ defmodule Cartero.ErrorHelpers do
     #
     #     dngettext "errors", "1 file", "%{count} files", count
     #
-    Gettext.dngettext(Cartero.Gettext, "errors", msg, msg, opts[:count], opts)
+    Gettext.dngettext(Hadaly.Gettext, "errors", msg, msg, opts[:count], opts)
   end
 
   def translate_error(msg) do
-    Gettext.dgettext(Cartero.Gettext, "errors", msg)
+    Gettext.dgettext(Hadaly.Gettext, "errors", msg)
   end
 end

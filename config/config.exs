@@ -6,12 +6,12 @@
 use Mix.Config
 
 # Configures the endpoint
-config :cartero, Cartero.Endpoint,
+config :hadaly, Hadaly.Endpoint,
   url: [host: "localhost"],
   root: Path.dirname(__DIR__),
   secret_key_base: "7Zo3oCxzSneiExBk076wF3ct0H5S7mfJDn2CSbkc7iEX0f9x6bCkUfVPw5yyIsl1",
   render_errors: [accepts: ~w(html json)],
-  pubsub: [name: Cartero.PubSub,
+  pubsub: [name: Hadaly.PubSub,
            adapter: Phoenix.PubSub.PG2]
 
 # Configures Elixir's Logger
@@ -27,3 +27,6 @@ import_config "#{Mix.env}.exs"
 config :phoenix, :generators,
   migration: true,
   binary_id: false
+
+config :hadaly,
+  slack_api_token: ""

@@ -1,3 +1,3 @@
-defmodule Cartero.LayoutView do
-  use Cartero.Web, :view
+defmodule Hadaly.LayoutView do
+  use Hadaly.Web, :view
 end

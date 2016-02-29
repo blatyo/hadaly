@@ -1,5 +1,5 @@
-defmodule Cartero.ErrorView do
-  use Cartero.Web, :view
+defmodule Hadaly.ErrorView do
+  use Hadaly.Web, :view
 
   def render("404.html", _assigns) do
     "Page not found"

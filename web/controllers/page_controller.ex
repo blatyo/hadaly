@@ -1,5 +1,5 @@
-defmodule Cartero.PageController do
-  use Cartero.Web, :controller
+defmodule Hadaly.PageController do
+  use Hadaly.Web, :controller
 
   def index(conn, _params) do
     render conn, "index.html"

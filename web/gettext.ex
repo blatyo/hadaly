@@ -1,11 +1,11 @@
-defmodule Cartero.Gettext do
+defmodule Hadaly.Gettext do
   @moduledoc """
   A module providing Internationalization with a gettext-based API.
 
   By using [Gettext](http://hexdocs.pm/gettext),
   your module gains a set of macros for translations, for example:
 
-      import Cartero.Gettext
+      import Hadaly.Gettext
 
       # Simple translation
       gettext "Here is the string to translate"
@@ -20,5 +20,5 @@ defmodule Cartero.Gettext do
 
   See the [Gettext Docs](http://hexdocs.pm/gettext) for detailed usage.
   """
-  use Gettext, otp_app: :cartero
+  use Gettext, otp_app: :hadaly
 end

@@ -1,3 +1,3 @@
-defmodule Cartero.PageView do
-  use Cartero.Web, :view
+defmodule Hadaly.PageView do
+  use Hadaly.Web, :view
 end

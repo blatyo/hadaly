@@ -1,14 +1,14 @@
-defmodule Cartero.Endpoint do
-  use Phoenix.Endpoint, otp_app: :cartero
+defmodule Hadaly.Endpoint do
+  use Phoenix.Endpoint, otp_app: :hadaly
 
-  socket "/socket", Cartero.UserSocket
+  socket "/socket", Hadaly.UserSocket
 
   # Serve at "/" the static files from "priv/static" directory.
   #
   # You should set gzip to true if you are running phoenix.digest
   # when deploying your static files in production.
   plug Plug.Static,
-    at: "/", from: :cartero, gzip: false,
+    at: "/", from: :hadaly, gzip: false,
     only: ~w(css fonts images js favicon.ico robots.txt)
 
   # Code reloading can be explicitly enabled under the
@@ -32,8 +32,8 @@ defmodule Cartero.Endpoint do
 
   plug Plug.Session,
     store: :cookie,
-    key: "_cartero_key",
+    key: "_hadaly_key",
     signing_salt: "y2BEP3r3"
 
-  plug Cartero.Router
+  plug Hadaly.Router
 end

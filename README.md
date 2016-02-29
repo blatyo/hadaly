@@ -1,4 +1,4 @@
-# Cartero
+# Hadaly
 
 To start your Phoenix app:
 
